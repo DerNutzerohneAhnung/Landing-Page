@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #111;
@@ -18,13 +19,22 @@
         .container {
             text-align: center;
         }
-        .name img {
-            max-width: 100%;
-            height: auto;
+        .name {
+            font-size: 64px; /* Groß und auffällig wie im Beispiel */
+            font-family: 'Permanent Marker', cursive; /* Handschriftlicher Stil */
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .name .dot {
+            color: red;
+            font-size: 80px; /* Etwas größer als der Text, für Akzent */
+            margin-right: 8px;
         }
         .contact {
             margin-top: 20px;
-            font-size: 14px; /* Ursprüngliche Schriftgröße */
+            font-size: 14px;
             line-height: 1.6;
         }
         .contact a {
@@ -35,9 +45,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="name">
-            <img src="luan.png" alt="Luan">
-        </div>
+        <div class="name"><span class="dot">.</span>luan</div>
         <div class="contact">
             Luan<br>
             Lindenstraße 15<br>
